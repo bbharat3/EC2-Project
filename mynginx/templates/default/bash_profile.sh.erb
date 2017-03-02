@@ -1,0 +1,4 @@
+grep 'MYRA__SENTRY_DSN' ~/.bash_profile
+if [ $? -ne 0 ];then
+  echo "MYRA__SENTRY_DSN=https://<%= node['mynginx']['dsn']%>"
+fi
