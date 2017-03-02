@@ -1,0 +1,21 @@
+{
+  "name": "mynginx",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+    "mynginx": {
+      "dsn": "https://765ff03adda@sentry.io/144288"
+      
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+		"recipe[mynginx]"
+  ],
+  "env_run_lists": {
+
+  }
+}
